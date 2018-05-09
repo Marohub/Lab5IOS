@@ -39,7 +39,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource ,StudentDet
         table.reloadData()
     }
     func uploadStudent(student: Student,studentChange: Student) {
-       
             studentChange.firstName = student.firstName
             studentChange.lastName = student.lastName
             studentChange.indexNumber = student.indexNumber
