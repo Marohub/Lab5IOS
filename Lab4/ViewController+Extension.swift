@@ -27,6 +27,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource ,StudentDet
         
         return cell
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let student = data[indexPath.row]
+            deleteStudentFromCoreData(student: student)
+            data.remove(at: indexPath.row)
+            table.reloadData()
+        }
+    }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let student = data[indexPath.row]
        
@@ -36,9 +45,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource ,StudentDet
     }
     func createNew(student: Student) {
         data.append(student)
+        addStudentToCoreData(firstName: student.firstName, lastName: student.lastName, indexNumber: student.indexNumber, labNumber: student.lab.number, labPoints: student.lab.points)
         table.reloadData()
     }
     func uploadStudent(student: Student,studentChange: Student) {
+         updateStudent(studentToUpdate: studentChange, studentModified: student)
             studentChange.firstName = student.firstName
             studentChange.lastName = student.lastName
             studentChange.indexNumber = student.indexNumber

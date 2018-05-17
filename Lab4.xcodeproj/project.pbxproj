@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0AB76E20A641CA00CAA8D9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F0AB76C20A641CA00CAA8D9 /* Model.xcdatamodeld */; };
 		4F7910BE2086679B002D7A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7910BD2086679B002D7A78 /* AppDelegate.swift */; };
 		4F7910C02086679B002D7A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7910BF2086679B002D7A78 /* ViewController.swift */; };
 		4F7910C32086679C002D7A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7910C12086679C002D7A78 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0AB76D20A641CA00CAA8D9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4F7910BA2086679B002D7A78 /* Lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7910BD2086679B002D7A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F7910BF2086679B002D7A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4F7910BD2086679B002D7A78 /* AppDelegate.swift */,
+				4F0AB76C20A641CA00CAA8D9 /* Model.xcdatamodeld */,
 				4F7910BF2086679B002D7A78 /* ViewController.swift */,
 				4F7910C12086679C002D7A78 /* Main.storyboard */,
 				4F7910C42086679D002D7A78 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				4F7910C02086679B002D7A78 /* ViewController.swift in Sources */,
 				4F7910BE2086679B002D7A78 /* AppDelegate.swift in Sources */,
 				4F7910D8208673D5002D7A78 /* ViewController+Extension.swift in Sources */,
+				4F0AB76E20A641CA00CAA8D9 /* Model.xcdatamodeld in Sources */,
 				4F7910D6208670F2002D7A78 /* StudentCell.swift in Sources */,
 				4F7910DA208A940E002D7A78 /* StudentDetailViewController.swift in Sources */,
 				4F7910D42086680D002D7A78 /* Lab.swift in Sources */,
@@ -350,6 +354,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F0AB76C20A641CA00CAA8D9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F0AB76D20A641CA00CAA8D9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4F0AB76D20A641CA00CAA8D9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4F7910B22086679B002D7A78 /* Project object */;
 }
